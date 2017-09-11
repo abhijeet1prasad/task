@@ -1,0 +1,99 @@
+<html>
+<head>
+<title> Dhwani Rural Information System</title>
+<link href="css.css" rel="stylesheet" type="text/css" media="all" />
+
+<style type="text/css">
+#wrap {
+   width:1100px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:400px;
+}
+#right_col {
+   float:right;
+   width:400px;
+}
+</style>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours'],
+  ['Work', 20],
+  ['Eat', 2],
+  ['TV', 4],
+  ['Gym', 2],
+  ['Sleep', 8]
+]); 
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'DAY SCHEDULE', 'width':550, 'height':500};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+ google.charts.load("current", {packages:["imagebarchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sale', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var chart = new google.visualization.ImageBarChart(document.getElementById('barchart'));
+
+        chart.draw(data, {width: 400, height: 240, min: 0});
+      }
+
+	  </script>
+
+</head>
+<body>
+<div id="header-wrapper">
+	
+		
+			<h1 style="color:white;">Dhwani</h1>
+			
+	</div>
+
+<div id="page-wrapper">
+	
+		
+			<h3>FRONT END HIRING CHALLANGE</h3>
+			
+		
+<div id="wrap">
+    <div id="left_col">
+        <div id="piechart"></div>
+    </div>
+	 </div>
+
+<div id="wrap">
+    <div id="right_col">
+        <div id="barchart"></div>
+    </div>
+	</div>
+
+	
+	</div>
+
+</body>
+</html>

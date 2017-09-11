@@ -1,0 +1,35 @@
+	
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #d03f58;
+		font-family: 'Questrial', sans-serif;
+		font-size: 12pt;
+		
+	}
+	
+	
+	
+
+
+	#header-wrapper
+	{
+		
+		padding: 30px;
+		
+	}
+
+
+
+	#page-wrapper
+	{
+		overflow: hidden;
+		background: #FFFFFF;
+		padding: 3em 0em;
+		text-align: center;
+	}
+
+	
+
